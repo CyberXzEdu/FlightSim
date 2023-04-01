@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "ECAM";
+  src: url("./Fonts/ECAMFontRegular.ttf") format("truetype");
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+svg.display {
+  user-select: none;
+
+  position: absolute;
+  width: 550px;
+  border: 1px solid white;
+  aspect-ratio: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+
+  text {
+    font-family: ECAM;
+  }
+
+  image {
+    width: 100%;
+  }
+}
