@@ -23,5 +23,14 @@ declare module "styled-components" {
       skyblue: string;
       terrain: string;
     }
+    panel: {
+      white: string;
+      black: string;
+      body: string;
+      amber: string;
+      red: string;
+      green: string;
+      blue: string;
+    }
   }
 }

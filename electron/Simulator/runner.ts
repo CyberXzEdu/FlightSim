@@ -1,4 +1,5 @@
 import { OpenedWindowsProps } from "..";
+//import { Switch } from "./Common/switch";
 
 import { AircraftProps } from "./Common/Types/aircraft";
 import { FUEL } from "./Common/fuel";
@@ -40,7 +41,12 @@ function loop (OpenedWindows: OpenedWindowsProps) {
   //console.log(Aircraft.elec.dc.voltage);
 
 
-  if (typeof OpenedWindows["debug"] !== "undefined") {
+  /* if (typeof OpenedWindows["debug"] !== "undefined") {
     OpenedWindows["debug"].webContents.send("data", Aircraft);
+  } */
+
+  for (const window in OpenedWindows) {
+    OpenedWindows[window].webContents.send("data", Aircraft);
+    //OpenedWindows[window].webContents.send("classes", [Switch]);
   }
 }

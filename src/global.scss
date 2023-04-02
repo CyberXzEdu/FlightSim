@@ -8,16 +8,27 @@ body {
   color: white;
 }
 
-svg.display {
-  user-select: none;
-
+div#root {
   position: absolute;
-  width: 550px;
-  border: 1px solid white;
-  aspect-ratio: 1;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+svg {
+  position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+svg.display {
+  user-select: none;
+  
+  width: 550px;
+  border: 1px solid white;
+  aspect-ratio: 1;
   border-radius: 8px;
 
   text {

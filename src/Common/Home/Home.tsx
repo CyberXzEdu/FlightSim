@@ -19,6 +19,12 @@ function Home () {
       >
         ECAM SD ELEC
       </button>
+
+      <button
+        onClick={ () => openWindow("overhead/elec") }
+      >
+        Overhead ELEC
+      </button>
     </>
   );
 }

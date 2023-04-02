@@ -21,5 +21,14 @@ export const theme: DefaultTheme = {
 
     skyblue: "skyblue",
     terrain: "brown"
+  },
+  panel: {
+    white: "#FFF",
+    black: "#000",
+    body: "#5F7284",
+    amber: "#C77A10",
+    red: "#D50010",
+    green: "#0C0",
+    blue: "#00B"
   }
 };

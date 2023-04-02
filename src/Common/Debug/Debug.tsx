@@ -23,6 +23,7 @@ function Debug () {
     <ContentFrame>
       <h1>Debug page</h1>
       <pre>{ data }</pre>
+      
     </ContentFrame>
   );
 }

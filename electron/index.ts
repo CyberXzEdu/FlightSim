@@ -62,8 +62,8 @@ ipcMain.handle("open-new-window", (_, code) => {
   if (BrowserWindow.getAllWindows().map(value => value.title).indexOf(title) > -1) return;
 
   const childWindow = new BrowserWindow({
-    width: 800,
-    height: 625,
+    width: code === "debug" ? 800 : 600,
+    height: code === "debug" ? 650 : 625,
     resizable: false,
     autoHideMenuBar: true,
     title,
